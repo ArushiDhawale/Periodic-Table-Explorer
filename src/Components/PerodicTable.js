@@ -23,9 +23,10 @@ const PeriodicTable = () => {
 
 
   return (
-    <div>
+    <div>   
 
       <div className="box-container">
+
         <div style={{display: 'flex'}}><SmallBox color="skyblue" />s block</div>
         <div style={{display: 'flex'}}><SmallBox color="orange" />d block</div>
         <div style={{display: 'flex'}}><SmallBox color="green" />p block</div>
@@ -119,46 +120,3 @@ export default PeriodicTable;
 
 
 
-
-// import React from 'react';
-// import elementsData from '../Data/elementsData';
-// import './PeriodicTable.css';
-
-// const PeriodicTable = () => {
-//   return (
-//     <div className="periodic-table">
-//       {elementsData.map((element) => (
-//         <div
-//           key={element.atomicNumber}
-//           className="element"
-//           style={{ gridColumn: element.group, gridRow: element.period }}
-//         >
-//           <strong>{element.symbol}</strong>
-//           <span className="atomic-number">{element.atomicNumber}</span>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default PeriodicTable;
-
-{
-  /* F-block Elements Section
-      <div className="f-block">
-        {fBlockElements.map((element, index) => (
-          <div
-            key={element.number}
-            className="element"
-            style={{
-              gridColumn: index + 4,  // F-block elements start at column 4
-              gridRow: element.period === 6 ? 1 : 2 // Separate rows for Lanthanides & Actinides
-            //   backgroundColor: element.color
-            }}
-          >
-            <strong>{element.symbol}</strong>
-            <span className="atomic-number">{element.number}</span>
-          </div>
-        ))}
-      </div> */
-}
